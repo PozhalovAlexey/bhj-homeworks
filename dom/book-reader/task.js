@@ -1,6 +1,6 @@
 const fontSizeElems = document.querySelectorAll('.font-size');
-const textColorElems = document.querySelectorAll('.text_color');
-const bgColorElems = document.querySelectorAll('.bg_color');
+const textColorElems = document.querySelectorAll('.color');
+const bgColorElems = document.querySelectorAll('.book__control_background .color');
 
 function handlerFontSize(e) {
     e.preventDefault();
@@ -49,7 +49,7 @@ function handlerTextColor(e) {
 
 function handlerBgColor(e) {
     e.preventDefault();
-    const bgColor = e.currentTarget.dataset.bgcolor
+    const bgColor = e.currentTarget.dataset.bgColor
     console.log('textColor',bgColor)
     for (const elem of bgColorElems) {
         if (elem === e.currentTarget) {
@@ -61,7 +61,7 @@ function handlerBgColor(e) {
 
     const bookElem = document.querySelector('#book');
     bookElem.classList.remove('book_bg-gray', 'book_bg-black', 'book_bg-white')
-    if (bgColor === 'grey') {
+    if (bgColor === 'gray') {
         bookElem.classList.add('book_bg-gray');
     } else if (bgColor === 'white') {
         bookElem.classList.add('book_bg-white')
