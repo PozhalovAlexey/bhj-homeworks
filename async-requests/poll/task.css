@@ -1,11 +1,15 @@
 body {
-  font-family: Arial;
+    font-family: Arial, sans-serif;
 }
 
 .card {
-  width: 625px;
+    width: 625px;
 }
 
 .poll__title {
-  margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+button {
+    margin-right: 10px;
 }
