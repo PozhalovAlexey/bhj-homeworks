@@ -10,7 +10,7 @@ form.addEventListener('submit', (e) => {
 
     xhr.upload.addEventListener('progress', (e) => {
         if (e.lengthComputable) {
-            progress.value = (e.loaded / e.total) * 100;
+            progress.value = (e.loaded / e.total)
         }
     })
     xhr.onreadystatechange = () => {
